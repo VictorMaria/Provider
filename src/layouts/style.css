@@ -1,0 +1,12 @@
+.provider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.provider-card {
+    border: 5px solid gray;
+    width: 40%;
+    padding: 2rem;
+    background-color: #e4e2ec;
+    text-align: center;
+}

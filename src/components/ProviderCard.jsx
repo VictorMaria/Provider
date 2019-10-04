@@ -15,7 +15,7 @@ const ProviderCard = ({
     {/* <div className="btn btn-sm like">
       <i className="fa fa-favorite" />
     </div> */}
-    <Link to={`https://rhmo-sample-api.herokuapp.com/providers/${id}`}>
+    <Link to={`/${id}`}>
     <img src={imageUrl} alt="Provider" />
     <div className="card-details">
       <h3 className="card__title">{name}</h3>

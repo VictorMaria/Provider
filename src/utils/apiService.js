@@ -28,7 +28,10 @@ class ApiService {
     );
     return response.json();
   }
-
+  static async getProvider(url) {
+    const response = await fetch(`${url}`);
+    return response.json();
+  }
 
   /**
    * @method post
