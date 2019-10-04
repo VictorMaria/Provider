@@ -28,12 +28,6 @@ class NewProviderForm extends React.Component {
     ApiService.post(urlToReach, providerDetails);
     alert('New Provider Added');
   }
-  // TASK 4: Add New Provider
-  // Add Functionality to the form below
-  // On submission it should make a POST request to 
-  // the server to create a new provider.
-  // Refer to the API documentation for details.
-
   render() {
     return (
       <form className="form" onSubmit={this.handleSubmit}>
