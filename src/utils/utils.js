@@ -1,4 +1,4 @@
-export const jsonGet = (json, query) => {
+export const jsonGet = (details, query) => {
   // TASK 1: 
   // Write a function that returns the appropriate value in a JSON object
   // matching the given string representation of the query.
@@ -21,5 +21,14 @@ export const jsonGet = (json, query) => {
   // const address = jsonGet(a, 'user.location.address')
 
   // ============== CODE GOES BELOW THIS LINE :) ==============
-
+  switch(query){
+    case 'name':
+      return details.name;
+    case 'type':
+      return details.type;  
+    case 'location':
+      return `City: ${details.location.city}, State: ${details.location.city}, Address: ${details.location.address}`;
+      default: 
+       return '';    
+  }
 };
