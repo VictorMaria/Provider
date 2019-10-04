@@ -26,7 +26,7 @@ class NewProviderForm extends React.Component {
     const { name, address, state, rating, type, image } = this.state;
     const providerDetails = JSON.stringify({ name, address, state, rating, type, image });
     ApiService.post(urlToReach, providerDetails);
-    alert('New Provider Added');
+    alert('Great! New Provider Added');
   }
   render() {
     return (
