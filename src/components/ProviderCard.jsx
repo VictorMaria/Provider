@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const ProviderCard = ({
   imageUrl = 'https://via.placeholder.com/400x200',
   name,
+  id,
   address,
   rating,
   providerType,
@@ -13,6 +15,7 @@ const ProviderCard = ({
     {/* <div className="btn btn-sm like">
       <i className="fa fa-favorite" />
     </div> */}
+    <Link to={`/${id}`}>
     <img src={imageUrl} alt="Provider" />
     <div className="card-details">
       <h3 className="card__title">{name}</h3>
@@ -25,6 +28,7 @@ const ProviderCard = ({
         </p>
       </div>
     </div>
+    </Link>
   </div>
 );
 

@@ -1,0 +1,13 @@
+.provider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.provider-card {
+    border: 5px solid #2095b6;
+    color: #2095b6;
+    width: 40%;
+    padding: 2rem;
+    background-color: #e4e2ec;
+    text-align: center;
+}
